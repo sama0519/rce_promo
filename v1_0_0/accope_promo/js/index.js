@@ -2,6 +2,7 @@
 var env = "sit"
 var hostname, clientid, clietnsecret, basicauth
 
+//loading page setup
 $(document).ready(function () {
   $("#creditcardForm")[0].reset()
   $("#loadingbay").hide();
@@ -65,7 +66,7 @@ $(document).ready(function () {
       $("#title12").text(mydata[0].details[12].name)
       $("#title13").text(mydata[0].details[13].name)
       $("#title14").text(mydata[0].details[14].name)
-      $("#title15").text(mydata[0].details[15].name)
+      // $("#title15").text(mydata[0].details[15].name)
       $("#title16").text(mydata[0].details[16].name)
       $("#thankyou").text(mydata[0].details[17].name)
     },
