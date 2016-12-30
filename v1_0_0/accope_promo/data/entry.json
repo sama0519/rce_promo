@@ -1,0 +1,78 @@
+[ {
+"name": "rce",
+"type": "creditcard",
+"details": [
+      {
+        "name": "Citi Rewards Visa Card",
+        "type": "cardname"
+      },
+      {
+        "name": "./images/card_visa.png",
+        "type": "cardimg"
+      },
+      {
+        "name": "Apply for a Citi Rewards Visa Card today and get S$10 shopping voucher",
+        "type": "detail1"
+      },
+      {
+        "name": "*For local residents only*",
+        "type": "detail11"
+      },
+      {
+        "name": "Earn 10X Rewards^ ",
+        "type": "detail2"
+      },
+      {
+        "name": "(10 points or 4 miles)for every S$1 spent on clothes,bags and shoes",
+        "type": "detail21"
+      },
+      {
+        "name": "Earn 20X Rewards^ ",
+        "type": "detail3"
+      },
+      {
+        "name": "for every S$1 spent on Amazon",
+        "type": "detail31"
+      },
+      {
+        "name": "Redeem your points ",
+        "type": "detail4"
+      },
+      {
+        "name": "for holidays, gifts cards, merchandise and more",
+        "type": "detail41"
+      },
+      {
+        "name": "Eligibility and Fees",
+        "type": "title1"
+      },
+      {
+        "name": "Main card applicants must be 21 years old and above",
+        "type": "title11"
+      },
+      {
+        "name": "For Singaporeans and PRs, minimum annual income of S$30,000",
+        "type": "title12"
+      },
+      {
+        "name": "For foreigners, minimum annual income to qualify is S$42,000",
+        "type": "title13"
+      },
+      {
+        "name": "Annual fee for Main Card is S$192.60(inclusive of GST) and first year fee is waived for Main Card",
+        "type": "title14"
+      },
+      {
+        "name": "Click here",
+        "type": "title15"
+      },
+      {
+        "name": "        to view interest, other fee and charges",
+        "type": "title16"
+      },
+      {
+        "name": "We are delighted with your interest in Citi Card, You may continue your application via email sent to you. alternatively our friendly Citi Staff will contact you in 1-3 business days about your application",
+        "type": "thankyou"
+      }
+]
+} ]

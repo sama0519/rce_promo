@@ -1,0 +1,23 @@
+[
+  {
+    "env":"sit",
+    "hostname":"https://sandbox.apihub.citi.com",
+    "clientid": "2378772f-4dcd-4496-8617-75a60abf8b23",
+    "clientsecret":"hG2qX5eM1yJ3vD5fW1iP1rB5sS3uT2oR0iN1oH0vK6xR0cB5xA",
+    "basicauth":"Basic MjM3ODc3MmYtNGRjZC00NDk2LTg2MTctNzVhNjBhYmY4YjIzOmhHMnFYNWVNMXlKM3ZENWZXMWlQMXJCNXNTM3VUMm9SMGlOMW9IMHZLNnhSMGNCNXhB"
+  },
+  {
+    "env":"uat",
+    "hostname":"",
+    "clientid": "",
+    "clientsecret":"",
+    "basicauth":""
+  },
+  {
+    "env":"prod",
+    "hostname":"",
+    "clientid": "",
+    "clientsecret":"",
+    "basicauth":""
+  }
+]
