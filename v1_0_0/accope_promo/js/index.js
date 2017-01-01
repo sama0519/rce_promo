@@ -266,7 +266,7 @@ var goBankPage = function() {
   $("#formpage").hide();
   $("#staffcode").val("");
   $("#resultpage").hide();
-
+  $("#staffForm")[0].reset()
   $("#bankpage").show();
 }
 
@@ -301,10 +301,71 @@ $(document).on('change', '#title', function (e) {
     }
 });
 
+function isNRICValid(pNric)
+{
+  var nric = pNric.toUpperCase();
+  var lastCharacterOfNRIC = nric.charAt(8);
 
-$(document).on("blur", "#nricinput", function(){
+  var lengthOfNRIC = nric.length;
+  var weightfNRIC = 2 * nric.charAt(1) + 7 * nric.charAt(2) + 6 * nric.charAt(3) + 5 * nric.charAt(4) + 4 * nric.charAt(5) + 3 * nric.charAt(6) + 2 * nric.charAt(7);
+
+  var result = (weightfNRIC/11);
+  var integerPart = Math.floor(result);
+  var remainder = weightfNRIC - (integerPart * 11);
+  var checkDigit = 11 - remainder;
+
+
+  var validCheckDigitValues =
+  [
+      [1,"A"],
+      [2,"B"],
+      [3,"C"],
+      [4,"D"],
+      [5,"E"],
+      [6,"F`"],
+      [7,"G"],
+      [8,"H"],
+      [9,"I"],
+      [10,"Z"],
+      [11,"J"],
+
+  ];
+
+  var ischeckDigitValid = 'false';
+
+  for( var i = 0, len = validCheckDigitValues.length; i < len; i++ )
+  {
+    if( validCheckDigitValues[i][0] === checkDigit )
+    {
+        if(lastCharacterOfNRIC == validCheckDigitValues[i][1])
+            ischeckDigitValid = true;
+        else
+            ischeckDigitValid = false;
+        break;
+    }
+  }
+
+  return ischeckDigitValid;
+
+}
+
+$(document).on("keyup", "#nricinput", function(){
   var myvalue = $("#nricinput").val()
-  $("#nricinput").val(myvalue.toUpperCase())
+  if(myvalue.length==9){
+    $("#nricinput").val(myvalue.toUpperCase())
+    if(isNRICValid(myvalue)){
+      console.log('valid nric')
+      $(this)[0].setCustomValidity('');
+    }else{
+      console.log('invalid nric')
+      $(this)[0].setCustomValidity('Please input valid NRIC number');
+    }
+  }
+})
+
+//
+$(document).on("keydown", "#email", function(){
+    $(this)[0].setCustomValidity('');
 })
 
 $(document).ready(function(){

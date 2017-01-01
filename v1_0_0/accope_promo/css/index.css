@@ -44,6 +44,15 @@ footer {
   /*background-color: #f5f5f5;*/
 }
 
+.has-success .input-group-addon {
+  color: #666;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+}
+.has-success .form-control-feedback {
+  color: #3c763d;
+}
+
 .navgoldimg {
 
 background-image: url(../img/VC040.png);
